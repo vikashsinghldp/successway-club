@@ -29,6 +29,10 @@
       opacity: 1;
       transition: all 0.3s ease;
     }
+    .logo{
+      width: 100%;
+      max-width: 50px;
+    }
   </style>
 
 </head>
@@ -44,8 +48,10 @@
     class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16 transition-all duration-300">
 
     <!-- Logo -->
-    <div class="text-xl font-bold text-yellow-400">
-      SuccessWay Club
+    <div class="flex items-center gap-2">
+      <img src="logo.png" class="h-9 w-auto object-contain">
+      <span class="text-xl font-bold text-yellow-400">SuccessWay Club</span>
+      
     </div>
 
     <!-- Desktop Menu -->
@@ -193,36 +199,335 @@
   </div>
 </section>
 
-<!-- ================= JOIN ================= -->
-<section id="join" class="py-20 px-6">
-  <div class="max-w-lg mx-auto bg-[#111827] p-10 rounded-2xl shadow-xl"
-    data-aos="zoom-in">
+<!-- ================= COURSES / PRODUCTS ================= -->
+<section id="courses" class="py-20 px-6 bg-[#0b0f19]">
+  <div class="max-w-7xl mx-auto">
 
-    <h2 class="text-3xl font-bold text-center mb-8">Reserve Your Spot</h2>
+    <!-- Section Header -->
+    <div class="text-center mb-14" data-aos="fade-up">
+      <span class="inline-block mb-4 px-4 py-2 rounded-full bg-yellow-400/20 text-yellow-400 text-xs font-bold">
+        PREMIUM TECH COURSES
+      </span>
+      <h2 class="text-3xl md:text-4xl font-extrabold">
+        Learn High-Income Tech Skills
+      </h2>
+      <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
+        Industry-ready courses designed for beginners to advanced learners.
+        Build skills that generate <b>real income</b> in the digital economy.
+      </p>
+    </div>
 
-    <form class="space-y-4">
-      <input type="text" placeholder="Full Name"
-        class="w-full px-4 py-3 rounded-lg bg-black/40 border border-white/10 focus:outline-none focus:border-yellow-400">
+    <!-- Courses Grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
-      <input type="tel" placeholder="WhatsApp Number"
-        class="w-full px-4 py-3 rounded-lg bg-black/40 border border-white/10 focus:outline-none focus:border-yellow-400">
+      <!-- Course 1 -->
+      <div class="bg-[#111827] rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition"
+           data-aos="fade-up">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+             class="h-44 w-full object-cover"
+             alt="Web Development">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2">Full-Stack Web Development</h3>
+          <p class="text-sm text-gray-400 mb-4">
+            HTML, Tailwind, JavaScript, React, Node & real projects.
+          </p>
+          <div class="flex justify-between items-center">
+            <span class="text-yellow-400 font-bold">₹2,999</span>
+            <a href="#join"
+               class="text-sm px-4 py-2 rounded-lg bg-yellow-400 text-black font-semibold hover:scale-105 transition">
+              Enroll
+            </a>
+          </div>
+        </div>
+      </div>
 
-      <select
-        class="w-full px-4 py-3 rounded-lg bg-black/40 border border-white/10 focus:outline-none focus:border-yellow-400">
-        <option>Select State</option>
-        <option>Uttar Pradesh</option>
-        <option>Bihar</option>
-        <option>Maharashtra</option>
-        <option>Others</option>
-      </select>
+      <!-- Course 2 -->
+      <div class="bg-[#111827] rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition"
+           data-aos="fade-up" data-aos-delay="100">
+        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c"
+             class="h-44 w-full object-cover"
+             alt="Python">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2">Python & AI Automation</h3>
+          <p class="text-sm text-gray-400 mb-4">
+            Python, APIs, AI tools, automation & freelancing skills.
+          </p>
+          <div class="flex justify-between items-center">
+            <span class="text-yellow-400 font-bold">₹3,999</span>
+            <a href="#join"
+               class="text-sm px-4 py-2 rounded-lg bg-yellow-400 text-black font-semibold hover:scale-105 transition">
+              Enroll
+            </a>
+          </div>
+        </div>
+      </div>
 
-      <button
-        class="w-full py-3 rounded-lg bg-yellow-400 text-black font-semibold hover:scale-105 transition">
-        REGISTER NOW
-      </button>
-    </form>
+      <!-- Course 3 -->
+      <div class="bg-[#111827] rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition"
+           data-aos="fade-up" data-aos-delay="200">
+        <img src="https://images.unsplash.com/photo-1556155092-8707de31f9c4"
+             class="h-44 w-full object-cover"
+             alt="Digital Marketing">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2">Digital Marketing & Growth</h3>
+          <p class="text-sm text-gray-400 mb-4">
+            SEO, Ads, social media, funnels & lead generation.
+          </p>
+          <div class="flex justify-between items-center">
+            <span class="text-yellow-400 font-bold">₹4,999</span>
+            <a href="#join"
+               class="text-sm px-4 py-2 rounded-lg bg-yellow-400 text-black font-semibold hover:scale-105 transition">
+              Enroll
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 4 -->
+      <div class="bg-[#111827] rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition"
+           data-aos="fade-up" data-aos-delay="300">
+        <img src="https://images.unsplash.com/photo-1618477247222-acbdb0e159b3"
+             class="h-44 w-full object-cover"
+             alt="UI UX">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2">UI/UX & Product Design</h3>
+          <p class="text-sm text-gray-400 mb-4">
+            Figma, design systems, mobile & web UI projects.
+          </p>
+          <div class="flex justify-between items-center">
+            <span class="text-yellow-400 font-bold">₹4,999</span>
+            <a href="#join"
+               class="text-sm px-4 py-2 rounded-lg bg-yellow-400 text-black font-semibold hover:scale-105 transition">
+              Enroll
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </section>
+
+
+
+
+<!-- ================= JOIN ================= -->
+<section id="join" class="py-20 px-6">
+  <div class="mx-auto p-10 rounded-2xl shadow-xl flex justify-center"
+    data-aos="zoom-in">
+
+    <div class="max-w-4xl w-full grid md:grid-cols-2 bg-[#111827] rounded-2xl shadow-2xl overflow-hidden">
+
+  <!-- LEFT INFO -->
+  <div class="hidden md:flex flex-col justify-center p-10 bg-gradient-to-br from-yellow-400/20 to-transparent">
+    <h2 class="text-3xl font-extrabold mb-6">
+      Join the <span class="text-yellow-400">Premium Network</span>
+    </h2>
+    <p class="text-gray-300 mb-6">
+      Register once and unlock access to:
+    </p>
+
+    <ul class="space-y-4 text-gray-300">
+      <li class="flex items-center gap-3">
+        <i class="fas fa-check-circle text-yellow-400"></i> High-income tech courses
+      </li>
+      <li class="flex items-center gap-3">
+        <i class="fas fa-check-circle text-yellow-400"></i> Business & income opportunities
+      </li>
+      <li class="flex items-center gap-3">
+        <i class="fas fa-check-circle text-yellow-400"></i> Daily payouts & training
+      </li>
+      <li class="flex items-center gap-3">
+        <i class="fas fa-check-circle text-yellow-400"></i> Community & mentor support
+      </li>
+    </ul>
+  </div>
+
+  <!-- RIGHT FORM -->
+  <div class="p-8 md:p-10">
+
+    <div class="mb-8">
+      <h3 class="text-2xl font-bold mb-2">Create Your Account</h3>
+      <p class="text-gray-400 text-sm">
+        It takes less than 2 minutes
+      </p>
+    </div>
+
+    <form class="space-y-5">
+
+      <!-- Full Name -->
+      <div>
+        <label class="block text-sm mb-1 text-gray-300">Full Name</label>
+        <input type="text" placeholder="Enter your full name"
+          class="w-full px-4 py-3 rounded-lg bg-black/40 border border-white/10 focus:outline-none focus:border-yellow-400">
+      </div>
+
+      <!-- WhatsApp -->
+      <div>
+        <label class="block text-sm mb-1 text-gray-300">WhatsApp Number</label>
+        <input type="tel" placeholder="10-digit mobile number"
+          class="w-full px-4 py-3 rounded-lg bg-black/40 border border-white/10 focus:outline-none focus:border-yellow-400">
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label class="block text-sm mb-1 text-gray-300">Email Address</label>
+        <input type="email" placeholder="you@example.com"
+          class="w-full px-4 py-3 rounded-lg bg-black/40 border border-white/10 focus:outline-none focus:border-yellow-400">
+      </div>
+
+      <!-- State -->
+      <div>
+        <label class="block text-sm mb-1 text-gray-300">State</label>
+        <select
+          class="w-full px-4 py-3 rounded-lg bg-black/40 border border-white/10 focus:outline-none focus:border-yellow-400">
+          <option>Select your state</option>
+          <option>Uttar Pradesh</option>
+          <option>Bihar</option>
+          <option>Maharashtra</option>
+          <option>Delhi</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <!-- Referral -->
+      <div>
+        <label class="block text-sm mb-1 text-gray-300">
+          Referral Code <span class="text-gray-500">(Optional)</span>
+        </label>
+        <input type="text" placeholder="Enter referral code"
+          class="w-full px-4 py-3 rounded-lg bg-black/40 border border-white/10 focus:outline-none focus:border-yellow-400">
+      </div>
+
+      <!-- Submit -->
+      <button
+        class="w-full py-3 rounded-lg bg-yellow-400 text-black font-semibold hover:scale-105 transition">
+        Register
+      </button>
+
+      <!-- Trust Text -->
+      <p class="text-xs text-gray-400 text-center mt-4">
+        🔒 Your information is safe & never shared
+      </p>
+
+    </form>
+
+  </div>
+</div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-[#0b0f19] border-t border-white/10 pt-16 pb-8 px-6">
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Top Grid -->
+    <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <img src="logo.png" alt="Logo" class="h-10">
+          <span class="text-xl font-bold text-yellow-400">SuccessWay Club</span>
+        </div>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          India’s premium network for tech education, digital business
+          and sustainable income opportunities.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#home" class="hover:text-yellow-400 transition">Home</a></li>
+          <li><a href="#courses" class="hover:text-yellow-400 transition">Courses</a></li>
+          <li><a href="#plan" class="hover:text-yellow-400 transition">Income Plan</a></li>
+          <li><a href="#join" class="hover:text-yellow-400 transition">Join Now</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Legal</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#" class="hover:text-yellow-400 transition">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition">Terms & Conditions</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition">Refund Policy</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition">Disclaimer</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Contact</h4>
+        <ul class="space-y-3 text-gray-400 text-sm">
+          <li class="flex items-center gap-3">
+            <i class="fas fa-envelope text-yellow-400"></i>
+            support@successwayclub.com
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fas fa-phone text-yellow-400"></i>
+            +91 9XXXXXXXXX
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fas fa-map-marker-alt text-yellow-400"></i>
+            India
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-white/10 my-8"></div>
+
+    <!-- Bottom -->
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+
+      <p class="text-gray-500 text-sm">
+        © 2026 SuccessWay Club. All rights reserved.
+      </p>
+
+      <!-- Social Icons -->
+      <div class="flex gap-4">
+        <a href="#" class="text-gray-400 hover:text-yellow-400 transition text-lg">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-yellow-400 transition text-lg">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-yellow-400 transition text-lg">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-yellow-400 transition text-lg">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+<!-- ================= WHATSAPP FLOATING BUTTON ================= -->
+<a href="https://wa.me/919XXXXXXXXX?text=Hi%20I%20want%20to%20know%20more%20about%20your%20business"
+   target="_blank"
+   class="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-2xl transition transform hover:scale-105">
+
+  <!-- Icon -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor"
+       class="w-6 h-6">
+    <path d="M19.11 17.205c-.272-.136-1.61-.793-1.86-.883-.25-.091-.432-.136-.614.136-.182.273-.705.883-.864 1.065-.159.182-.318.205-.59.068-.272-.136-1.148-.423-2.186-1.348-.808-.721-1.354-1.61-1.513-1.883-.159-.273-.017-.42.119-.557.122-.121.272-.318.409-.477.136-.159.182-.273.273-.455.091-.182.045-.341-.023-.477-.068-.136-.614-1.477-.841-2.023-.221-.53-.445-.459-.614-.468l-.523-.009c-.182 0-.477.068-.727.341-.25.273-.955.932-.955 2.273 0 1.341.977 2.637 1.113 2.819.136.182 1.923 2.938 4.66 4.121.651.281 1.16.449 1.556.575.654.208 1.249.179 1.72.109.525-.078 1.61-.657 1.837-1.293.227-.636.227-1.181.159-1.293-.068-.114-.25-.182-.523-.318z"/>
+    <path d="M16.001 3.2c-7.073 0-12.8 5.726-12.8 12.8 0 2.259.588 4.458 1.705 6.401L3.2 28.8l6.57-1.676A12.735 12.735 0 0 0 16 28.8c7.073 0 12.8-5.726 12.8-12.8S23.074 3.2 16.001 3.2zm0 23.146c-2.012 0-3.982-.536-5.708-1.55l-.409-.239-3.897.994 1.04-3.797-.266-.389a10.512 10.512 0 0 1-1.705-5.765c0-5.798 4.714-10.512 10.512-10.512S26.513 9.802 26.513 15.6 21.799 26.346 16.001 26.346z"/>
+  </svg>
+
+  <!-- Text -->
+  <span class="hidden sm:block font-semibold">
+    Chat on WhatsApp
+  </span>
+</a>
+
 
 <!-- AOS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
