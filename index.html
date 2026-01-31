@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Premium Business Network</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <style>
+    /* smooth slide */
+    .menu-enter {
+      max-height: 0;
+      opacity: 0;
+    }
+    .menu-enter-active {
+      max-height: 500px;
+      opacity: 1;
+      transition: all 0.3s ease;
+    }
+  </style>
+
+</head>
+<body class="bg-[#0b0f19] text-white font-sans">
+  
+  
+<!-- NAVBAR -->
+<!-- ===== DARK NAVBAR ===== -->
+<nav id="navbar"
+  class="fixed top-0 w-full z-50 bg-[#0b0f19]/90 backdrop-blur border-b border-white/10 transition-all duration-300">
+
+  <div id="navInner"
+    class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16 transition-all duration-300">
+
+    <!-- Logo -->
+    <div class="text-xl font-bold text-yellow-400">
+      SuccessWay Club
+    </div>
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex space-x-8">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#plan" class="nav-link">Plan</a>
+      <a href="#features" class="nav-link">Benefits</a>
+      <a href="#join" class="nav-link">Join</a>
+    </div>
+
+    <!-- Mobile Button -->
+    <button id="menuBtn" class="md:hidden text-white">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu"
+    class="md:hidden overflow-hidden max-h-0 bg-[#0b0f19] border-t border-white/10 transition-all duration-300">
+    <a href="#home" class="block nav-link px-6 py-4">Home</a>
+    <a href="#plan" class="block nav-link px-6 py-4">Plan</a>
+    <a href="#features" class="block nav-link px-6 py-4">Benefits</a>
+    <a href="#join" class="block nav-link px-6 py-4">Join</a>
+  </div>
+</nav>
+
+
+<!-- ================= HERO ================= -->
+<section class="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
+
+  <!-- Background Glow -->
+  <div class="absolute inset-0 bg-gradient-to-br from-yellow-500/10 via-transparent to-purple-500/10"></div>
+
+  <div class="relative max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+    <!-- Left -->
+    <div>
+      <span class="inline-block mb-6 px-5 py-2 rounded-full bg-yellow-400/20 text-yellow-400 text-xs font-bold tracking-wide"
+        data-aos="fade-down">
+        🚀 PRE-LAUNCHING OFFER ACTIVE
+      </span>
+
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6 hero-title">
+        Empowering Your <br>
+        <span class="text-yellow-400">Financial Journey</span>
+      </h1>
+
+      <p class="text-gray-400 mb-8 hero-text">
+        Join India’s premium direct selling ecosystem —  
+        a hybrid business model engineered for <b>10x faster growth</b> and
+        <b>long-term sustainable income</b>.
+      </p>
+
+      <div class="flex gap-4 hero-btns">
+        <a href="#join"
+          class="px-6 py-3 rounded-lg bg-yellow-400 text-black font-semibold hover:scale-105 transition">
+          BOOK YOUR TOP ID
+        </a>
+        <a href="#"
+          class="px-6 py-3 rounded-lg border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black transition">
+          BUSINESS PDF
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div data-aos="zoom-in">
+      <img src="https://images.unsplash.com/photo-1559526324-593bc073d938"
+        class="rounded-2xl shadow-2xl"
+        alt="Business Growth">
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= PLAN ================= -->
+<section id="plan" class="py-20 px-6">
+  <h2 class="text-center text-3xl md:text-4xl font-bold mb-12" data-aos="fade-up">
+    Business Income Plan
+  </h2>
+
+  <div class="max-w-5xl mx-auto overflow-x-auto" data-aos="fade-up">
+    <table class="w-full border border-white/10 rounded-xl overflow-hidden">
+      <thead class="bg-white/5">
+        <tr>
+          <th class="p-4 text-left">Level</th>
+          <th class="p-4 text-left">Team</th>
+          <th class="p-4 text-left">Income</th>
+          <th class="p-4 text-left">Rewards</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-t border-white/10 hover:bg-white/5">
+          <td class="p-4">Star</td>
+          <td class="p-4">5 Directs</td>
+          <td class="p-4 text-yellow-400">₹5,000+</td>
+          <td class="p-4">Welcome Kit</td>
+        </tr>
+        <tr class="border-t border-white/10 hover:bg-white/5">
+          <td class="p-4">Silver</td>
+          <td class="p-4">125 Team</td>
+          <td class="p-4 text-yellow-400">₹25,000+</td>
+          <td class="p-4">Android Tablet</td>
+        </tr>
+        <tr class="border-t border-white/10 hover:bg-white/5">
+          <td class="p-4">Gold</td>
+          <td class="p-4">3125 Team</td>
+          <td class="p-4 text-yellow-400">₹1.5 Lakh+</td>
+          <td class="p-4">International Trip</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="py-20 px-6 bg-white/5">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+
+    <div class="bg-[#111827] p-8 rounded-2xl text-center hover:-translate-y-2 transition"
+      data-aos="fade-up">
+      <i class="fas fa-rocket text-yellow-400 text-3xl mb-4"></i>
+      <h3 class="text-xl font-semibold mb-3">Auto-Spill Support</h3>
+      <p class="text-gray-400">Automatic team growth from upline using smart spill-over logic.</p>
+    </div>
+
+    <div class="bg-[#111827] p-8 rounded-2xl text-center hover:-translate-y-2 transition"
+      data-aos="fade-up" data-aos-delay="100">
+      <i class="fas fa-wallet text-yellow-400 text-3xl mb-4"></i>
+      <h3 class="text-xl font-semibold mb-3">Instant Payout</h3>
+      <p class="text-gray-400">Daily commission payouts directly to your bank account.</p>
+    </div>
+
+    <div class="bg-[#111827] p-8 rounded-2xl text-center hover:-translate-y-2 transition"
+      data-aos="fade-up" data-aos-delay="200">
+      <i class="fas fa-graduation-cap text-yellow-400 text-3xl mb-4"></i>
+      <h3 class="text-xl font-semibold mb-3">Premium Training</h3>
+      <p class="text-gray-400">Elite mentorship in digital marketing & leadership.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= JOIN ================= -->
+<section id="join" class="py-20 px-6">
+  <div class="max-w-lg mx-auto bg-[#111827] p-10 rounded-2xl shadow-xl"
+    data-aos="zoom-in">
+
+    <h2 class="text-3xl font-bold text-center mb-8">Reserve Your Spot</h2>
+
+    <form class="space-y-4">
+      <input type="text" placeholder="Full Name"
+        class="w-full px-4 py-3 rounded-lg bg-black/40 border border-white/10 focus:outline-none focus:border-yellow-400">
+
+      <input type="tel" placeholder="WhatsApp Number"
+        class="w-full px-4 py-3 rounded-lg bg-black/40 border border-white/10 focus:outline-none focus:border-yellow-400">
+
+      <select
+        class="w-full px-4 py-3 rounded-lg bg-black/40 border border-white/10 focus:outline-none focus:border-yellow-400">
+        <option>Select State</option>
+        <option>Uttar Pradesh</option>
+        <option>Bihar</option>
+        <option>Maharashtra</option>
+        <option>Others</option>
+      </select>
+
+      <button
+        class="w-full py-3 rounded-lg bg-yellow-400 text-black font-semibold hover:scale-105 transition">
+        REGISTER NOW
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 900, once: true });
+</script>
+
+<!-- GSAP -->
+<script>
+  gsap.from(".hero-title", { y: 60, opacity: 0, duration: 1 });
+  gsap.from(".hero-text", { y: 40, opacity: 0, delay: 0.2 });
+  gsap.from(".hero-btns", { y: 30, opacity: 0, delay: 0.4 });
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const navLinks = document.querySelectorAll(".nav-link");
+  const navbar = document.getElementById("navbar");
+  const navInner = document.getElementById("navInner");
+
+  // Toggle menu
+  menuBtn.onclick = () => {
+    mobileMenu.classList.toggle("menu-enter-active");
+  };
+
+  // Close menu on outside click
+  document.addEventListener("click", (e) => {
+    if (!menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+      mobileMenu.classList.remove("menu-enter-active");
+    }
+  });
+
+  // Active link highlight
+  navLinks.forEach(link => {
+    link.classList.add(
+      "text-gray-700", "hover:text-blue-600",
+      "transition"
+    );
+    link.onclick = () => {
+      navLinks.forEach(l => l.classList.remove("text-blue-600", "font-semibold"));
+      link.classList.add("text-blue-600", "font-semibold");
+      mobileMenu.classList.remove("menu-enter-active");
+    };
+  });
+
+  // Sticky shrink on scroll
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add("shadow-lg");
+      navInner.classList.remove("h-16");
+      navInner.classList.add("h-12");
+    } else {
+      navInner.classList.add("h-16");
+      navInner.classList.remove("h-12");
+    }
+  });
+</script>
+
+</body>
+</html>
